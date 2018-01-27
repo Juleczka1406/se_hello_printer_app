@@ -3,8 +3,10 @@ from formater import get_formatted
 from formater import SUPPORTED, PLAIN
 from flask import request
 
+
 moje_imie = "Justyna"
 msg = "Hello World!"
+
 
 @app.route('/')
 def index():
@@ -14,6 +16,11 @@ def index():
     return get_formatted(msg, moje_imie,
                          output.lower())
 
+
 @app.route('/outputs')
 def supported_output():
     return ", ".join(SUPPORTED)
+
+@app.route('/justyna')
+def imie():
+    print(moje_imie)
