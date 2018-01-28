@@ -8,6 +8,7 @@ moje_imie = "Justyna"
 msg = "Hello World!"
 
 
+
 @app.route('/')
 def index():
     output = request.args.get('output')
@@ -24,8 +25,3 @@ def supported_output():
 @app.route('/justyna')
 def imie():
     print(moje_imie)
-
-@app.route('/data')
-def data_aktualna():
-    print(now.date)
-    #to jest to
