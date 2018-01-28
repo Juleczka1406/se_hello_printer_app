@@ -8,7 +8,6 @@ moje_imie = "Justyna"
 msg = "Hello World!"
 
 
-
 @app.route('/')
 def index():
     output = request.args.get('output')
@@ -21,6 +20,7 @@ def index():
 @app.route('/outputs')
 def supported_output():
     return ", ".join(SUPPORTED)
+
 
 @app.route('/justyna')
 def imie():

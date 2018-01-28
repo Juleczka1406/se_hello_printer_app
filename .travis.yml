@@ -3,7 +3,7 @@ services:
   - docker
 python:
   - "2.7"
-isntall:
+install:
   - make deps
 script:
   - make test
