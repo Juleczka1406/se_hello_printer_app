@@ -17,7 +17,7 @@ test:
 test_cov:
 	PYTHONPATH=. py.test -s --cov=.
 test_xunit:
-	py.test -s --cov=.  --junit-xml=test_results.xml
+	PYTHONPATH=. py.test -s --cov=.  --junit-xml=test_results.xml
 
 docker_build:
 	docker build -t hello-world-printer .
