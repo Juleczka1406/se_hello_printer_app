@@ -4,7 +4,7 @@ from formater import SUPPORTED, PLAIN
 from flask import request
 
 
-moje_imie = "Justyna"
+moje_imie = "Justyna_An"
 msg = "Hello World!"
 
 
@@ -22,6 +22,6 @@ def supported_output():
     return ", ".join(SUPPORTED)
 
 
-@app.route('/justyna')
+@app.route('/justyna_an')
 def imie():
     print(moje_imie)
