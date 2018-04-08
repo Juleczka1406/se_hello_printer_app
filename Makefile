@@ -12,7 +12,6 @@ run:
 
 test:
 	PYTHONPATH=. py.test
-	PYTHONPATH=. py.test  --verbose -s
 
 test_cov:
 	PYTHONPATH=. py.test  --verbose -s --cov=.
