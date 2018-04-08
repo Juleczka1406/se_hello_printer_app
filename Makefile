@@ -15,9 +15,10 @@ test:
 	PYTHONPATH=. py.test  --verbose -s
 
 test_cov:
-	eee
+	PYTHONPATH=. py.test -s --cov=.
 test_xunit:
-	fff
+	py.test -s --cov=.  --junit-xml=test_results.xml
+
 docker_build:
 	docker build -t hello-world-printer .
 
