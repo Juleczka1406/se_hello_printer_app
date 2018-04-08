@@ -22,6 +22,6 @@ def supported_output():
     return ", ".join(SUPPORTED)
 
 
-@app.route('/justyna_an')
+@app.route('/justyna')
 def imie():
     print(moje_imie)
